@@ -1,13 +1,9 @@
 pipeline {
     agent any
-    tools {
-        maven 'Maven 3.8.6'
-        jdk 'Java 17'
-    }
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/your-username/e-challan-system.git'
+                git branch: 'main', url: 'https://github.com/Thilak0402/e-challan-system.git'
             }
         }
         stage('Build & Test') {
